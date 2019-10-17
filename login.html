@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Welcome - Log in</title>
+<link href="CSS.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="outerbox">
+<div id="mainlog">
+<h1>Welcome to Covéa</h1>
+<!--Creates "Login" button-->
+<button onclick="document.getElementById('id01').style.display='block'" style="width:65%; height: 15%;"><h2>Login</h2></button>
+<!--Uses login to creat a pop up box-->
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="#" method="post"><!--What it should do when confirmed-->
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	  <!-- Would be picture-->
+      <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
+	  	  <h4>Login!</h4>
+    </div>
+	<!--Creates content inside box-->
+    <div class="container">
+	<!--Allows user to put policy number in as a text field-->
+      <label for="uname"><b>Policy Number</b></label>
+      <input type="text" min="6" max="6" placeholder="Enter your policy number" name="uname" required>
+	<!--Allow susers to put password in-->
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+	<!--Allows to either cancel or tell us you forgot password -->
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+<!--Creates register option-->
+<br><button onclick="document.getElementById('id02').style.display='block'" style="width:65%; height: 15%"><h2>Register</h2></button>
+<div id="id02" class="modal">
+  <form class="modal-content animate" action="./reg.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
+	  <h4>Register with us!</h4>
+    </div>
+    <div class="container">
+      <label for="usame"><b>Policy Number</b></label>
+      <input type="text" placeholder="Enter Your Policy Number" name="usame" required>
+
+      <label for="usame"><b>Username</b></label>
+      <input type="password" placeholder="Enter a Username" name="usame" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter a Password" name="psw" required>
+	  
+	  <label for="psw"><b>Re-enter Password</b></label>
+      <input type="password" placeholder="Please re-enter the password" name="psw" required>
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+   	   <span class="pnu">Dont have a <a href="./details/reg.pn.html">policy number?</a></span>
+    </div>
+  </form>
+</div>
+</div>
+
+</div>
+</body>
+</html>
