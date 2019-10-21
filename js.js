@@ -19,3 +19,6 @@ function filterFunction() {
     }
   }
 }
+function random() {
+  document.getElementById("gen").innerHTML = Math.random();
+}

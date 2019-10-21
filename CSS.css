@@ -1,23 +1,52 @@
 #body
 {
-text-align: right;
+  text-align: right;
 }
 
 #outerbox
 {
-width: 100%;
-margin: 0 auto;
-text-align: left;
-overflow: auto;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  overflow: auto;
 }
-
+#policy
+{
+  width:50%;
+  border-radius: 5px 50px 50px 5px;
+  float:left;
+  margin:5px;
+  background-color:#428BCA;
+  height: 15%;
+  z-index: -2;
+}
+#policy_alt
+{
+  width:50%;
+  border-radius: 5px 50px 50px 5px;
+  float:left;
+  margin:5px;
+  background-color:#78A02E;
+  height: 15%;
+  z-index: -2;
+}
+#policy_al
+{
+  width:50%;
+  border-radius: 5px 50px 50px 5px;
+  float:left;
+  margin:5px;
+  background-color:#475760;
+  height: 15%;
+  z-index: -2;
+}
 #header
 {
-width:100%;
-float:left;
-margin:0px;
-background-color:#F39223;
-height: 10%;
+  width:100%;
+  float:left;
+  margin:0px;
+  background-color:#F39223;
+  height: 15%;
 }
 
 #main
@@ -26,6 +55,16 @@ float:right;
 width:100%;
 background-color:#00938E;
 height:90%;
+}
+#gen {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #ffffff;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 50px;
 }
 #mainlog
 {
@@ -109,7 +148,10 @@ img.avatar {
 .container {
   padding: 16px;
 }
-
+.container_var {
+  padding: 16px;
+  opacity: 0.75;
+}
 span.psw {
   float: right;
   padding-top: 16px;
@@ -165,12 +207,12 @@ span.usname {
 }
 
 @-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
+  from {-webkit-transform: scale(0)}
   to {-webkit-transform: scale(1)}
 }
-  
+
 @keyframes animatezoom {
-  from {transform: scale(0)} 
+  from {transform: scale(0)}
   to {transform: scale(1)}
 }
 
