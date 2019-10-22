@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>Welcome - Authorise</title>
+<link href="../../CSS.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="outterbox">
+<div id="mainlog">
+<h1>Welcome to Covéa</h1>
+<h2>Sorry to inform you but our <b>TEXT</b> system is currently unavaible. if you're unable to rembember your policy number please vist your local branch, Halifax dean clough or call us on 01484 000000 <br> sorry for any inconvience!</h2>
+ <button style="width:65%; height: 15%"><a href="../../index.html"><h2>Log in</h2></a></button>
+</div>
+</div>
+</body>
+</html>
