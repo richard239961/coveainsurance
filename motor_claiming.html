@@ -1,0 +1,127 @@
+<html>
+<head>
+  <title>Claming - Motor</title>
+  <link href="../CSS.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="outerbox">
+  <div id="header">
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn" style="width: 50%; height: 25%;"></button>
+    <div id="myDropdown" class="dropdown-content">
+     <!--<input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">-->
+        <button onclick="document.getElementById('id01').style.display='block'" style="width: 90%; height: 20%;">Account</button><br>
+        <button onclick="document.getElementById('id02').style.display='block'" style="width: 90%; height: 20%;">Contact</button><br>
+        <button onclick="document.getElementById('id03').style.display='block'" style="width: 90%; height: 20%;">Support</button><br>
+        <button onclick="document.getElementById('id04').style.display='block'" style="width: 90%; height: 20%;">Support</button><br>
+    </div>
+    <div id="id01" class="modal">
+    <form class="modal-content animate" action="./account.html" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  	  <!-- Would be picture-->
+        <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
+  	  	  <h3>Your Account!</h3>
+      </div>
+  	<!--Creates content inside box-->
+      <div class="container">
+  	<!--Allows user to put policy number in as a text field-->
+  	<img src="./images/avatar.png">
+        <label for="uname"><b>Your Policy Number</b></label>
+        <input disabled type="text" min="6" max="6" placeholder="127532" name="uname">
+  	<!--Allow susers to put password in-->
+        <label for="uname"><b>Username</b></label>
+        <input disabled type="text" placeholder="Monkeylover69420" name="uname">
+        <button type="submit" style="width: 50%; height: 10%">Go further</button>
+      </div>
+  	<!--Allows to either cancel or tell us you forgot password -->
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="width: 50%; height: 10%">Cancel</button>
+      </div>
+    </form>
+  </div>
+    <div id="id02" class="modal">
+    <form class="modal-content animate" action="./mainpage.html" method="post"><!--What it should do when confirmed-->
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  	  <!-- Would be picture-->
+       <!-- <img src="./images/avatar.png" alt="Avatar" class="avatar"> -->
+  	  	  <h3>Support!</h3>
+      </div>
+  	<!--Creates content inside box-->
+      <div class="container">
+        <label for="uname"><b>You can call us on:</b></label>
+        <input disabled type="text" min="6" max="6" placeholder="01484 000111" name="uname">
+        <label for="uname"><b>Email us on:</b></label>
+        <input disabled type="text" placeholder="support@coveainsurance.co.uk" name="uname">
+        <label for="uname"><b>Vist our branch at:</b></label>
+        <input disabled type="text" placeholder="Dean Clough, Halifax HX1" name="uname">
+        <button type="submit" style="width: 50%; height: 10%">Go further</button>
+      </div>
+  	<!--Allows to either cancel or tell us you forgot password -->
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn" style="width: 50%; height: 10%">Cancel</button>
+      </div>
+    </form>
+  </div>
+    <div id="id03" class="modal">
+    <form class="modal-content animate" action="./mainpage.html" method="post"><!--What it should do when confirmed-->
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+  	  <!-- Would be picture-->
+        <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
+  	  	  <h3>...h3>
+      </div>
+  	<!--Creates content inside box-->
+      <div class="container">
+  	<!--Allows user to put policy number in as a text field-->
+        <label for="uname"><b>...b></label>
+        <input disabled type="text" min="6" max="6" placeholder="127532" name="uname" required>
+  	<!--Allow susers to put password in-->
+        <label for="uname"><b>Username</b></label>
+        <input disabled type="text" placeholder="Monkeylover69420" name="psw" required>
+        <button type="submit" style="width: 50%; height: 10%">Go further</button>
+      </div>
+  	<!--Allows to either cancel or tell us you forgot password -->
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn" style="width: 50%; height: 10%">Cancel</button>
+      </div>
+    </form>
+  </div>
+  <div id="id04" class="modal">
+    <form class="modal-content animate" action="./index.html" method="post"><!--What it should do when confirmed-->
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+  	  	  <h3>Are you sure you want to log out?</h3>
+      </div>
+      <div class="container">
+        <label for="uname"><b>Your Policy Number</b></label>
+  	    <button type="submit" style="width: 50%; height: 10%"><h2>Log me out now!</h2></button>
+  	    <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn" style="width: 50%; height 10%;"><h2>No, i accidently clicked this</h2></button>
+      </div>
+    </form>
+  </div>
+    <div id="main">
+      <h2 style="text-align: center;">Covea Claiming for motor cover</h2>
+      <form action="...html" method="post">
+        <div class="imgcontainer">
+        </div>
+          <div class="container">
+            <label for="uname"><b>You're Claiming for:</b></label>
+            <input disabled type="text" placeholder="Motor cover" name="uname" required>
+            <label for="uname"><b>What type of accident happened?</b>
+            <input type="text" list="numplates" name="number plates" placeholder="Please Enter." name="uname" required  /></label>
+            <datalist id="numplates">
+              <option value="Breakdown">
+              <option value="Crash">
+            </datalist>
+            <button type="submit">Submit</button>
+          </div>
+          <div class="container_var">
+            <button type="button" class="cancelbtn"><a href="../mainpage.html">Go Home</a></button>
+          </div>
+     </form>
+   </div>
+</div>
+</body>
+</html>

@@ -45,7 +45,7 @@
   width:100%;
   float:left;
   margin:0px;
-  background-color:#F39223;
+  background-color:#e1ebeb ;
   height: 15%;
 }
 
@@ -53,7 +53,7 @@
 {
 float:right;
 width:100%;
-background-color:#00938E;
+background-color:#f5f0f0;
 height:90%;
 }
 #gen {
@@ -71,7 +71,7 @@ height:90%;
 float:right;
  text-align: center;
 width:100%;
-background-color:#00938E;
+background-color:#f5f0f0;
 height:100%;
 }
 body {font-family: Arial, Helvetica, sans-serif;}
@@ -89,7 +89,7 @@ input[type=text],input[type=text],input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #F39223;
+  background-color: #233434;
   float: center;
   text-align: center;
   color: white;
@@ -164,6 +164,19 @@ span.usname {
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+.modal_1 {
+  display: block; /* Shown by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
