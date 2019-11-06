@@ -13,31 +13,35 @@
 #policy
 {
   width:50%;
-  border-radius: 5px 50px 50px 5px;
+  border-radius: 35px 35px 35px 35px;
   float:left;
   margin:5px;
   background-color:#428BCA;
-  height: 15%;
+  height: auto;
   z-index: -2;
+}
+#central
+{
+  width:49%;
+  float:left;
+  background-color:#fff;
+  height: auto;
+}
+#main_c
+{
+  width:100%;
+  float:left;
+  background-color:#fff;
+  height: auto;
 }
 #policy_alt
 {
   width:50%;
-  border-radius: 5px 50px 50px 5px;
+  border-radius: 35px 35px 35px 35px;
   float:left;
   margin:5px;
   background-color:#78A02E;
-  height: 15%;
-  z-index: -2;
-}
-#policy_al
-{
-  width:50%;
-  border-radius: 5px 50px 50px 5px;
-  float:left;
-  margin:5px;
-  background-color:#475760;
-  height: 15%;
+  height: auto%;
   z-index: -2;
 }
 #header
@@ -45,16 +49,21 @@
   width:100%;
   float:left;
   margin:0px;
-  background-color:#e1ebeb ;
+  background-color:#666666 ;
   height: 15%;
 }
-
 #main
 {
 float:right;
 width:100%;
 background-color:#f5f0f0;
 height:90%;
+}
+#space
+{
+width:auto;
+background-color:#fff;
+height:2%;
 }
 #gen {
     width: 100%;
@@ -95,11 +104,19 @@ button {
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
+  border-radius: 40px 40px 40px 40px;
   border: none;
   cursor: pointer;
   border-radius: 5%;
   /*padding: 5%;*/
 
+}
+.main_button
+{
+top: 25%;
+left: 25%;
+transform: translate(-25%, -25%);
+transform: translate(25%, 25%);
 }
 h2
 {
