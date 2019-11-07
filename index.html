@@ -6,9 +6,10 @@
 <body>
 <div id="outerbox">
 <div id="mainlog">
-<h1>Welcome to Covéa</h1>
+<h1 style="text-align: center;">Welcome to Covéa</h1>
 <!--Creates "Login" button-->
-<button onclick="document.getElementById('id01').style.display='block'" style="width:65%; height: 15%;"><h2>Login</h2></button>
+<button onclick="document.getElementById('id01').style.display='block'" class="main_login" style="width:50%; height: 15%; text-align: center;"><h2>Login</h2></button>
+<br><button onclick="document.getElementById('id02').style.display='block'" class="main_login" style="width:50%; height: 15%"><h2>Register</h2></button>
 <!--Uses login to creat a pop up box-->
 <div id="id01" class="modal">
   <form class="modal-content animate" action="./mainpage.html" method="post"><!--What it should do when confirmed-->
@@ -39,7 +40,6 @@
   </form>
 </div>
 <!--Creates register option-->
-<br><button onclick="document.getElementById('id02').style.display='block'" style="width:65%; height: 15%"><h2>Register</h2></button>
 <div id="id02" class="modal">
   <form class="modal-content animate" action="./reg.php" method="post">
     <div class="imgcontainer">
