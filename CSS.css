@@ -125,6 +125,13 @@ h2
 	color: #ffffff;
 	text-align: center;
 }
+h5
+{
+  font-family: Arial;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+}
 h1
 {
 	font-family: Arial;
@@ -261,7 +268,7 @@ span.usname {
   background-color: #5a7823;
   background-image:url('./navicon.png');
   color: white;
-  padding: 16px;
+  padding: 35px;
   font-size: 16px;
   border: none;
   cursor: pointer;
@@ -294,8 +301,11 @@ span.usname {
   display: none;
   position: absolute;
   background-color: #78A02E;
-  opacity: 0.75;
-  min-width: 230px;
+  opacity: 0.85;
+  min-width: 270px;
+  width: auto;
+  height: auto;
+  font-size: 150px
   overflow: auto;
   border: 1px solid #ddd;
   z-index: 1;

@@ -11,17 +11,17 @@
           <button onclick="myFunction()" class="dropbtn" style="width: 50%; height: 25%;"></button>
           <div id="myDropdown" class="dropdown-content">
            <!--<input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">-->
-              <button onclick="document.getElementById('id01').style.display='block'" style="width: 90%; height: 20%;">Account</button><br>
-              <button onclick="document.getElementById('id02').style.display='block'" style="width: 90%; height: 20%;">Contact</button><br>
-              <button onclick="document.getElementById('id03').style.display='block'" style="width: 90%; height: 20%;">Support</button><br>
-              <button onclick="document.getElementById('id04').style.display='block'" style="width: 90%; height: 20%;">Support</button><br>
+              <button onclick="document.getElementById('id01').style.display='block'" style="width: 95%; height: 20%;"><h2>Account</h2></button><br>
+              <button onclick="document.getElementById('id02').style.display='block'" style="width: 90%; height: 20%;"><h2>Contact</h2></button><br>
+              <button onclick="document.getElementById('id03').style.display='block'" style="width: 90%; height: 20%;"><h2>Support</h2></button><br>
+              <button onclick="document.getElementById('id04').style.display='block'" style="width: 90%; height: 20%;"><h2>Logout</h2></button><br>
           </div>
           <div id="id01" class="modal">
             <form class="modal-content animate" action="./account.html" method="post">
               <div class="imgcontainer">
                 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
         	       <!-- Would be picture-->
-        	        <!--img src="./images/avatar.png" class="Avatar" style="text-align: center;">-->
+        	        <img src="./images/avatar.png" class="Avatar" style="text-align: center;">
                   <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
         	  	  <h3>Your Account!</h3>
               </div>
@@ -31,7 +31,7 @@
         	        <!--<img src="./images/avatar.png" class="Avatar" style="text-align: center;">-->
                   <label for="uname" style="text-align: center;"><b>Your Policy Number</b></label>
                   <input disabled type="text" min="6" max="6" placeholder="127532" name="uname">
-        	         <!--Allows users to put password in-->
+        	         <!--Allow susers to put password in-->
                    <label for="uname"><b>Username</b></label>
                    <input disabled type="text" placeholder="Monkeylover69420" name="uname">
                    <!-- <button type="submit" style="width: 50%; height: 10%">Go further</button> -->
@@ -98,15 +98,15 @@
         	  	    <h3>Are you sure you want to log out?</h3>
               </div>
               <div class="container">
-                <label for="uname"><b>Your Policy Number</b></label>
-        	      <button type="submit" style="width: 50%; height: 10%"><h2>Log me out now!</h2></button>
-        	      <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn" style="width: 50%; height 10%;"><h2>No, i accidently clicked this</h2></button>
+                <label for="uname"><b>Your Policy Number</b></label><br>
+        	      <button type="submit" style="width: 45%; height: 15%"><h2>Log me out now!</h2></button>
+        	      <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn" style="width: 45%; height: 10%"><h2>No, i accidently clicked this</h2></button>
               </div>
             </form>
           </div>
           </div>
           <h1 style="text-align: center;"> Covéa insurance </h1>
-
+<img src="./images/Logo.png" alt="Covea Logo" width="200px" height="200px"><br>
         </div>
       <div id="main">
         <br>

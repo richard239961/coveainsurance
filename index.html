@@ -7,35 +7,37 @@
 <div id="outerbox">
 <div id="mainlog">
 <h1 style="text-align: center;">Welcome to Covéa</h1>
+<img src="./images/Logo.png" alt="Covea Logo" width="200px" height="200px"><br>
 <!--Creates "Login" button-->
 <button onclick="document.getElementById('id01').style.display='block'" class="main_login" style="width:50%; height: 15%; text-align: center;"><h2>Login</h2></button>
 <br><button onclick="document.getElementById('id02').style.display='block'" class="main_login" style="width:50%; height: 15%"><h2>Register</h2></button>
-<!--Uses login to create a pop up box-->
+<!--Uses login to creat a pop up box-->
 <div id="id01" class="modal">
   <form class="modal-content animate" action="./mainpage.html" method="post"><!--What it should do when confirmed-->
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 	  <!-- Would be picture-->
       <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
-	  	  <h4>Login!</h4>
+        <img src="./images/Logo.png" alt="Covea Logo" width="200px" height="200px"><br>
+        <h1>Login!</h1>
     </div>
 	<!--Creates content inside box-->
     <div class="container">
 	<!--Allows user to input policy number in as a text field-->
-      <label for="uname"><b>Policy Number</b></label>
+      <label for="uname"><h1>Policy Number</h1></label>
       <input type="text" min="6" max="6" placeholder="Enter your policy number" name="uname" required>
 	<!--Allows users to put password in-->
-      <label for="psw"><b>Password</b></label>
+      <label for="psw"><h1>Password</h1></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
-      <button type="submit">Login</button>
+      <button type="submit" style="width:20%; height: 10%"><h5>Login</h5></button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
     </div>
 	<!--Allows to either cancel or tell us you forgot password -->
     <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="width:20%; height: 10%"><h5>Cancel</h5></button>
+      <P align="right"><button type="button" oclick="#". style.display="none" class=Forgetpassword style="width:20%; height: 10%">forget password</button>
     </div>
   </form>
 </div>
