@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Welcome - Policy forgot</title>
+<link href="../CSS.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="outerbox">
+<div id="mainlog">
+<h1>Welcome to Covéa</h1>
+<!--Creates "Login" button-->
+<button onclick="document.getElementById('id01').style.display='block'" style="width:65%; height: 25%;"><h2>I don't know my policy number</h2></button>
+<!--Uses login to creat a pop up box-->
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="./reg.pn/192102935.html" method="post"><!--What it should do when confirmed-->
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	  <!-- Would be picture-->
+      <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
+	  	  <h4>Polciy number</h4>
+    </div>
+	<!--Creates content inside box-->
+    <div class="container">
+	  <label for="uname"><b>Your Date of birth</b></label><br>
+      <input type="date" placeholder="01/01/2000" name="uname" required><br>
+      <label for="uname"><b>Your full name</b></label>
+      <input type="text"  placeholder="John Doe..." (KM) name="uname" required>
+      <label for="uname"><b>Confirm your number</b></label>
+	  <input type="text"  placeholder="Your Mobile Number.." name="uname" required>
+      <button type="submit">Authorise me</button>
+      <label>
+      </label>
+    </div>
+	<!--Allows to either cancel or tell us you forgot password -->
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+<!--Creates register option-->
+<br><button onclick="document.getElementById('id02').style.display='block'" style="width:65%; height: 25%"><h2>I don't have a policy number</h2></button>
+<div id="id02" class="modal">
+  <form class="modal-content animate" action="../login.html" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
+	  <h4>We're happy to see you want to use our serive! to be apart of our team please vist your <br> local branch, Halifax Dean clough. or Call us at: 01484 0000000</h4>
+    </div>
+    <div class="container">
+      <button type="submit">Go Back to log in</button>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+
+    </div>
+  </form>
+</div>
+</div>
+
+</div>
+</body>
+</html>
