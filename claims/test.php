@@ -1,2 +1,2 @@
 
- <?php echo $_GET["Vechile"]; ?><br>
+ <?php echo $_GET["Vehicle"]; ?><br>
