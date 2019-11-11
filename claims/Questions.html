@@ -1,0 +1,287 @@
+<html>
+<head>
+  <title>Claming - Motor</title>
+  <link href="../CSS.css" rel="stylesheet" type="text/css" />
+  <scr href="../js.js">
+</head>
+<body>
+<div id="outerbox">
+    <div id="main">
+      <datalist id="title_list">
+        <select>
+          <option value="Question One">
+          <option value="Question Two">
+          <option value="Question Three">
+          <option value="Question Four">
+          <option value="Question Five">
+          <option value="Question Six">
+          <option value="Question Seven">
+          <option value="Question Eight">
+          <option value="Question Nine">
+          <option value="Question Ten">
+        </select>
+       </datalist>
+      <div id="id01" class="modal_2"> <!--What Has happened?-->
+        <form for="myForm" class="modal-content animate">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none', document.getElementById('close').style.display='block'" class="close" title="Close">&times;</span>
+                <label for="title"></title>
+                <input type="p" list="title_list" onclick="goToQ" placeholder="Question One" name="title">
+            </div>
+            <!--Creates content inside box-->
+         <div class="container">
+           <!--Allow usrrs to put what happened-->
+          <label for="ACCIDENT"><b>What has happened?</b></label>
+          <input  list="q1" type="text" placeholder="" name="ACCIDENT" required>
+            <datalist id="q1">
+              <option value="Break Down">
+              <option value="Crash">
+              <option value="Other(Please type in box)">
+            </datalist>
+          </div>
+          <div class="container" style="background-color:#f1f1f1">
+            <button disabled class="cancelbtn" style="width: 45%; height: 15%; text-align: center; background-color: #990000"><h3>Go back</h3></button>
+            <button type="button" onclick="document.getElementById('id01').style.display='none', document.getElementById('id02').style.display='block'" style="width: 45%; height: 15%;  text-align: center;"><h3 style="color: #fff;">Next</h3></button>
+              <!--onclick="document.getElementById('id01').style.display='none', document.getElementById('id02').style.display='block'" -->
+          </div>
+        </form>
+      </div>
+      <div id="id02" class="modal"> <!--Was there cctv?-->
+        <form class="modal-content animate">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none', document.getElementById('close').style.display='block'" class="close" title="Close">&times;</span>
+            <label for="title"></title>
+            <input type="p" list="title_list" placeholder="Question Two" name="title">
+          </div>
+          <div class="container">
+            <label for="CCTV"><b>What type of breakdown, Crash or other happened? </b></label>
+            <input  list="yesorno" type="text" placeholder="Please Explain..." name="uname" required>
+          </div>
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='block', document.getElementById('id02').style.display='none'" class="cancelbtn" style="width: 45%; height: auto;"><h3>Go back</h3></button>
+            <button type="button" onclick="document.getElementById('id02').style.display='none', document.getElementById('id03').style.display='block'" style="width: 45%; height: 15%;  text-align: center;"><h3 style="color: #fff;">Next</h3></button>
+          </div>
+        </form>
+      </div>
+      <div id="id03" class="modal"> <!--Was there any witnesses?-->
+        <form class="modal-content animate">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id03').style.display='none', document.getElementById('close').style.display='block'" class="close" title="Close">&times;</span>
+            <label for="title"></title>
+            <input type="p" list="title_list" placeholder="Question Three" name="title">
+          </div>
+          <div class="container">
+            <label for="Witnesses"><b>Was there any witnesses or cctv?</b></label required>
+            <input  list="yesorno" type="text" placeholder="" name="Witnesses">
+            <datalist id="yesorno">
+              <option value="Yes, Both">
+              <option value="Yes, Only CCTV">
+              <option value="Yes, Only Witnesses">
+              <option value=No>
+              <option value="N/A">
+            </datalist>
+          </div>
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id02').style.display='block', document.getElementById('id03').style.display='none'" class="cancelbtn" style="width: 45%; height: auto;"><h3>Go back</h3></button>
+            <button type="button" onclick="document.getElementById('id03').style.display='none', document.getElementById('id04').style.display='block'" style="width: 45%; height: 15%;  text-align: center;"><h3 style="color: #fff;">Next</h3></button>
+          </div>
+        </form>
+      </div>
+      <div id="id04" class="modal"> <!--Where did it happen?-->
+        <form class="modal-content animate">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id04').style.display='none', document.getElementById('close').style.display='block'" class="close" title="Close">&times;</span>
+            <label for="title"></title>
+            <input type="p" list="title_list" placeholder="Question Four" name="title">
+          </div>
+          <div class="container" id="date">
+            <label for="DATE"><b>When Did this happen?</b></label required>
+            <input  list="yesorno" type="date" max="2019-11-13" min="2019-10-13" value="2019-11-13" name="uname">
+          </div>
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id03').style.display='block', document.getElementById('id04').style.display='none'" class="cancelbtn" style="width: 45%; height: auto;"><h3>Go back</h3></button>
+            <button type="button" onclick="document.getElementById('id04').style.display='none', document.getElementById('id05').style.display='block'" style="width: 45%; height: 15%;  text-align: center;"><h3 style="color: #fff;">Next</h3></button>
+          </div>
+        </form>
+      </div>
+      <div id="id05" class="modal"> <!--What damage was done? PT1-->
+        <form class="modal-content animate">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id05').style.display='none', document.getElementById('close').style.display='block'" class="close" title="Close">&times;</span>
+            <label for="title"></title>
+            <input type="p" list="title_list" placeholder="Question Five" name="title">
+          </div>
+          <div class="container">
+            <label for="DMGPT1"><b>Where Was the damage done?</b></label required>
+            <input  list="DMGPT1" type="text" placeholder="" name="DMGPT1">
+            <datalist id="DMGPT1">
+              <option value="Bonnet">
+              <option value="Engine">
+              <option value="Boot">
+              <option value="Driver-side door">
+              <option value="Passangers-side door">
+              <option value="Roof">
+              <option value="Wheel's">
+              <option value="N/A">
+            </datalist>
+          </div>
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id04').style.display='block', document.getElementById('id05').style.display='none'" class="cancelbtn" style="width: 45%; height: auto;"><h3>Go back</h3></button>
+            <button type="button" onclick="document.getElementById('id05').style.display='none', document.getElementById('id06').style.display='block'" style="width: 45%; height: 15%;  text-align: center;"><h3 style="color: #fff;">Next</h3></button>
+          </div>
+        </form>
+      </div>
+      <div id="id06" class="modal"> <!--What damage was done? PT2-->
+        <form class="modal-content animate">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id06').style.display='none', document.getElementById('close').style.display='block'" class="close" title="Close">&times;</span>
+            <label for="title"></title>
+            <input type="p" list="title_list" placeholder="Question Six" name="title">
+          </div>
+          <div class="container">
+            <label for="DMGPT2"><b>Was There any where else?</b></label required>
+            <input  list="DMGPT2" type="text" placeholder="" name="DMGPT2">
+            <datalist id="DMGPT2">
+              <option value="Yes, Frount Side of vechile">
+              <option value="Yes, Behind of vechile">
+              <option value="No">
+              <option value="Yes, Other (Type In own words)">
+              <option value="N/A">
+            </datalist>
+          </div>
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id05').style.display='block', document.getElementById('id06').style.display='none'" class="cancelbtn" style="width: 45%; height: auto;"><h3>Go back</h3></button>
+            <button type="button" onclick="document.getElementById('id06').style.display='none', document.getElementById('id07').style.display='block'" style="width: 45%; height: 15%;  text-align: center;"><h3 style="color: #fff;">Next</h3></button>
+          </div>
+        </form>
+      </div>
+      <div id="id07" class="modal"> <!--How many people was involed in the accident?-->
+        <form class="modal-content animate">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id07').style.display='none', document.getElementById('close').style.display='block'" class="close" title="Close">&times;</span>
+            <label for="title"></title>
+            <input type="p" list="title_list" placeholder="Question Seven" name="title">
+          </div>
+          <div class="container">
+            <label for="PEOLPLE"><b>How many people was involed in the incident?</b></label required>
+            <input  list="People" type="text" placeholder="" name="People">
+            <datalist id="People">
+              <option value="1-4">
+              <option value="5-6">
+              <option value="More">
+            </datalist>
+          </div>
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id06').style.display='block', document.getElementById('id07').style.display='none'" class="cancelbtn" style="width: 45%; height: auto;"><h3>Go back</h3></button>
+            <button type="button" onclick="document.getElementById('id07').style.display='none', document.getElementById('id08').style.display='block'" style="width: 45%; height: 15%;  text-align: center;"><h3 style="color: #fff;">Next</h3></button>
+          </div>
+        </form>
+      </div>
+      <div id="id08" class="modal"> <!--Is there any Dash cam evidence-->
+        <form class="modal-content animate">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id08').style.display='none', document.getElementById('close').style.display='block'" class="close" title="Close">&times;</span>
+            <label for="title"></title>
+            <input type="p" list="title_list" placeholder="Question Eight" name="title">
+          </div>
+          <div class="container">
+            <label for="DASH"><b>Is there any dash came evidence?</b></label required>
+            <input  list="DASH" type="text" placeholder="" name="DASH">
+            <datalist id="DASH">
+              <option value="Yes">
+              <option value=No>
+              <option value="N/A">
+            </datalist>
+          </div>
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id07').style.display='block', document.getElementById('id08').style.display='none'" class="cancelbtn" style="width: 45%; height: auto;"><h3>Go back</h3></button>
+            <button type="button" onclick="document.getElementById('id08').style.display='none', document.getElementById('id09').style.display='block'" style="width: 45%; height: 15%;  text-align: center;"><h3 style="color: #fff;">Next</h3></button>
+          </div>
+        </form>
+      </div>
+      <div id="id09" class="modal"> <!--Was anyone hurt?-->
+        <form class="modal-content animate">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id09').style.display='none', document.getElementById('close').style.display='block'" class="close" title="Close">&times;</span>
+            <label for="title"></title>
+            <input type="p" list="title_list" placeholder="Question Nine" name="title">
+          </div>
+          <div class="container">
+            <label for="HURT"><b>Was anyone hurt?</b></label required>
+            <input  list="HURT" type="text" placeholder="" name="HURT">
+            <datalist id="HURT">
+              <option value="Yes">
+              <option value=No>
+              <option value="N/A">
+            </datalist>
+          </div>
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id08').style.display='block', document.getElementById('id09').style.display='none'" class="cancelbtn" style="width: 45%; height: auto;"><h3>Go back</h3></button>
+            <button type="button" onclick="document.getElementById('id09').style.display='none', document.getElementById('id10').style.display='block'" style="width: 45%; height: 15%;  text-align: center;"><h3 style="color: #fff;">Next</h3></button>
+          </div>
+        </form>
+      </div>
+      <div id="id10" class="modal"> <!--If so, How badly?-->
+        <form class="modal-content animate" action="./hotlelsurnan.html" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id10').style.display='none', document.getElementById('close').style.display='block'" class="close" title="Close">&times;</span>
+            <label for="title"></title>
+            <input type="p" list="title_list" placeholder="Question One" name="title">IFSO
+          </div>
+          <div class="container">
+            <label for="IFSO"><b>If so, How badly?</b></label required>
+            <input  list="IFSO" type="text" placeholder="" name="IFSO">
+            <datalist id="IFSO">
+              <option value="N/A">
+              <option value="Moderate">
+              <option value="Serve">
+              <option value="Dead">
+            </datalist>
+          </div>
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id09').style.display='block', document.getElementById('id010').style.display='none'" class="cancelbtn" style="width: 45%; height: auto;"><h3>Go back</h3></button>
+            <button type="button" onclick="document.getElementById('id10').style.display='none', document.getElementById('id11').style.display='block'" style="width: 45%; height: 15%;  text-align: center;"><h3 style="color: #fff;">Next</h3></button>
+          </div>
+        </form>
+      </div>
+      <div id="id11" class="modal"> <!--If so, How badly?-->
+        <form class="modal-content animate" action="./awaiting.html" method="post">
+          <div class="imgcontainer">
+            <label for="title"></title>
+              <span onclick="document.getElementById('id11').style.display='none', document.getElementById('close').style.display='block'" class="close" title="Close">&times;</span>
+            <input type="p" list="title_list" placeholder="PREMIUME!" name="title">
+          </div>
+          <div class="container">
+            <label for="confirm"><b>You're Entitled to our advance service please confirm</b></label required><br>
+              <input type="checkbox" name="Hotel" value="hotel"> Do you need a hotel?<br>
+              <input type="checkbox" name="Ferry" value="ferry"> Do you need your ferry re-booking?<br>
+              <input type="checkbox" name="transport" value="taxi">Do you need transport to the hotel?<br><br><br>
+              <input type="checkbox" name="confrim" value="Confirm" required> YOU UNDERSTAND YOUR AWNSER ARE CORRECT!<br>
+          </div>
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick=" document.getElementById('id11').style.display='none'" class="cancelbtn" style="width: 45%; height: auto;"><h3>Go back</h3></button>
+            <button type="submit" style="width: 45%;  height: auto;"><h3 style="color: #fff;">Next</h2></button>
+          </div>
+        </form>
+      </div>
+      <div id="close" class="modal"> <!--If so, How badly?-->
+        <form class="modal-content animate" action="../mainpage.html" method="post">
+          <div class="imgcontainer">
+            <label for="title"></title>
+            <input type="p" list="title_list" placeholder="Leaving.." name="title">
+          </div>
+          <div class="container">
+            <label for="confirm"><b>Please tick so you understand</b></label required><br>
+              <input type="checkbox" name="confrim" value="Confirm" required> you understand NONE of your infomation or awnsers will be saved.<br>
+              <input type="checkbox" name="confrim2" value="Confirm" required>you understand this does NOT go on your record<br>
+          </div>
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick=" document.getElementById('close').style.display='none'" class="cancelbtn" style="width: 45%; height: auto;"><h3>Go back</h3></button>
+            <button type="submit" style="width: 45%;  height: auto;"><h3 style="color: #fff;">I Confirm</h2></button>
+          </div>
+        </form>
+      </div>
+    </div>
+</div>
+</body>
+</html>
