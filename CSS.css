@@ -35,7 +35,8 @@
   }
 #policy /*One of two policy Boxers on main page*/
   {
-    width:50%;
+    width:auto;
+    max-width: 45%;
     border-radius: 35px 35px 35px 35px;
     float:left;
     margin:5px;
@@ -43,9 +44,13 @@
     height: auto;
     z-index: -2;
   }
+#policies /*Allows Search Feature to work*/
+    {
+    }
 #policy_alt /*Second of two policy Boxers on main page*/
   {
-    width:50%;
+    width:auto;
+    max-width: 45%;
     border-radius: 35px 35px 35px 35px;
     float:left;
     margin:5px;
@@ -106,7 +111,7 @@ body /*Sets font for all of website*/
   {
     font-family: Arial, Helvetica, sans-serif;
   }
-input[type=text],input[type=date],input[type=number], input[type=password]/* Full-width input fields as well as setting style for input, Text, Date, Number and password*/
+input[type=text],input[type=date],input[type=p],input[type=number], input[type=password],  input[type=email]/* Full-width input fields as well as setting style for input, Text, Date, Number and password*/
   {
     width: 100%;
     padding: 12px 20px;
@@ -190,13 +195,12 @@ span.usname/*Password input with name "psw"*/
 .cancelbtn /* Extra styles for the cancel button */
   {
     width: auto;
-    padding: 10px 18px;
     background-color: #DB1831;
   }
 .imgcontainer/* Center the image and position the close button */
   {
     text-align: center;
-    margin: 24px 0 12px 0;
+    margin: 12px 0 12px 0;
     position: relative;
   }
 .main_button /*Main button to centralize*/
@@ -218,9 +222,9 @@ span.usname/*Password input with name "psw"*/
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
+    padding-top: 30px;
   }
-.modal_1 /* The Modal (background) (this one sits on top) */
+.modal_1 /* The Modal (background) (this one sits on top as well as open isntantly) */
   {
     display: block; /* Shown by default */
     position: fixed; /* Stay in place */
@@ -240,7 +244,7 @@ span.usname/*Password input with name "psw"*/
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 80%;/* Could be more or less, depending on screen size */
-    height: 70%;
+    height: auto;
   }
 .close /* The Close Button (x) */
   {
@@ -310,16 +314,17 @@ span.usname/*Password input with name "psw"*/
   {
     display: block;
   }
-.logo
+.logo /*Logo Class*/
   {
     height:200px;
     width: 200px;
+    text-align: center;
   }
-.main_login
+.main_login /*Main login class*/
   {
       width:50%;
       height: 15%;
-      text-align: center;
+       text-align: center;
   }
 
 

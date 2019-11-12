@@ -9,7 +9,7 @@
     <div id="main">
       <datalist id="title_list">
         <select>
-          <option value="Question One">
+          <option value="Q1 - What Has happened?">
           <option value="Question Two">
           <option value="Question Three">
           <option value="Question Four">
@@ -21,19 +21,18 @@
           <option value="Question Ten">
         </select>
        </datalist>
-      <div id="id01" class="modal_2"> <!--What Has happened?-->
+      <div id="id01" class="modal_1"> <!--What Has happened?-->
         <form for="myForm" class="modal-content animate">
             <div class="imgcontainer">
               <img src="../images/Logo.png" alt="Covea logo" width="200px" height="200px">
               <span onclick="document.getElementById('id01').style.display='none', document.getElementById('close').style.display='block'" class="close" title="Close">&times;</span>
-                <label for="title"></title>
-                <input type="p" list="title_list" onclick="goToQ" placeholder="Question One" name="title">
             </div>
             <!--Creates content inside box-->
          <div class="container">
            <!--Allow users to put what happened-->
-          <label for="ACCIDENT"><b>What has happened?</b></label>
-          <input  list="q1" type="text" placeholder="" name="ACCIDENT" required>
+          <label for="ACCIDENT"></label>
+
+          <input  list="q1" type="text" placeholder=" Question One - What has happened?" name="ACCIDENT" required>
             <datalist id="q1">
               <option value="Break Down">
               <option value="Crash">
@@ -52,15 +51,13 @@
           <div class="imgcontainer">
             <img src="../images/Logo.png" alt="Covea logo" width="200px" height="200px">
             <span onclick="document.getElementById('id02').style.display='none', document.getElementById('close').style.display='block'" class="close" title="Close">&times;</span>
-            <label for="title"></title>
-            <input type="p" list="title_list" placeholder="Question Two" name="title">
           </div>
           <div class="container">
-            <label for="CCTV"><b>What type of breakdown, Crash or other happened? </b></label>
-            <input  list="yesorno" type="text" placeholder="Please Explain..." name="uname" required>
+            <label for="CCTV"><b> </b></label>
+            <input  list="yesorno" type="text" placeholder="Question Two - Please Breifly explain what happened..." name="uname" required>
           </div>
           <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id01').style.display='block', document.getElementById('id02').style.display='none'" class="cancelbtn" style="width: 45%; height: auto;"><h3>Go back</h3></button>
+            <button type="button" onclick="document.getElementById('id01').style.display='block', document.getElementById('id02').style.display='none'" class="cancelbtn" style="width: 45%; height: 15%;"><h3>Go back</h3></button>
             <button type="button" onclick="document.getElementById('id02').style.display='none', document.getElementById('id03').style.display='block'" style="width: 45%; height: 15%;  text-align: center;"><h3 style="color: #fff;">Next</h3></button>
           </div>
         </form>
@@ -70,12 +67,10 @@
           <div class="imgcontainer">
             <img src="../images/Logo.png" alt="Covea logo" width="200px" height="200px">
             <span onclick="document.getElementById('id03').style.display='none', document.getElementById('close').style.display='block'" class="close" title="Close">&times;</span>
-            <label for="title"></title>
-            <input type="p" list="title_list" placeholder="Question Three" name="title">
           </div>
           <div class="container">
-            <label for="Witnesses"><b>Was there any witnesses or cctv?</b></label required>
-            <input  list="yesorno" type="text" placeholder="" name="Witnesses">
+            <label for="Witnesses"></label >
+            <input  list="yesorno" type="text" placeholder="Question Three - Was there any witnesses or cctv?" name="Witnesses">
             <datalist id="yesorno">
               <option value="Yes, Both">
               <option value="Yes, Only CCTV">
@@ -85,25 +80,23 @@
             </datalist>
           </div>
           <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id02').style.display='block', document.getElementById('id03').style.display='none'" class="cancelbtn" style="width: 45%; height: auto;"><h3>Go back</h3></button>
+            <button type="button" onclick="document.getElementById('id02').style.display='block', document.getElementById('id03').style.display='none'" class="cancelbtn" style="width: 45%; height: 15%;"><h3>Go back</h3></button>
             <button type="button" onclick="document.getElementById('id03').style.display='none', document.getElementById('id04').style.display='block'" style="width: 45%; height: 15%;  text-align: center;"><h3 style="color: #fff;">Next</h3></button>
           </div>
         </form>
       </div>
       <div id="id04" class="modal"> <!--Where did it happen?-->
         <form class="modal-content animate">
-          <img src="../images/Logo.png" alt="Covea logo" width="200px" height="200px">
           <div class="imgcontainer">
+            <img src="../images/Logo.png" alt="Covea logo" text-align"center" width="200px" height="200px">
             <span onclick="document.getElementById('id04').style.display='none', document.getElementById('close').style.display='block'" class="close" title="Close">&times;</span>
-            <label for="title"></title>
-            <input type="p" list="title_list" placeholder="Question Four" name="title">
           </div>
           <div class="container" id="date">
-            <label for="DATE"><b>When Did this happen?</b></label required>
+            <label for="DATE"><h1>Question Four - When Did this happen?</h1></label required>
             <input  list="yesorno" type="date" max="2019-11-13" min="2019-10-13" value="2019-11-13" name="uname">
           </div>
           <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id03').style.display='block', document.getElementById('id04').style.display='none'" class="cancelbtn" style="width: 45%; height: auto;"><h3>Go back</h3></button>
+            <button type="button" onclick="document.getElementById('id03').style.display='block', document.getElementById('id04').style.display='none'" class="cancelbtn" style="width: 45%; height: 15%;"><h3>Go back</h3></button>
             <button type="button" onclick="document.getElementById('id04').style.display='none', document.getElementById('id05').style.display='block'" style="width: 45%; height: 15%;  text-align: center;"><h3 style="color: #fff;">Next</h3></button>
           </div>
         </form>
@@ -113,12 +106,10 @@
           <div class="imgcontainer">
             <img src="../images/Logo.png" alt="Covea logo" width="200px" height="200px">
             <span onclick="document.getElementById('id05').style.display='none', document.getElementById('close').style.display='block'" class="close" title="Close">&times;</span>
-            <label for="title"></title>
-            <input type="p" list="title_list" placeholder="Question Five" name="title">
           </div>
           <div class="container">
-            <label for="DMGPT1"><b>Where Was the damage done?</b></label required>
-            <input  list="DMGPT1" type="text" placeholder="" name="DMGPT1">
+            <label for="DMGPT1"><b></b></label required>
+            <input  list="DMGPT1" type="text" placeholder="Question Five -  Where Was the damage done?" name="DMGPT1">
             <datalist id="DMGPT1">
               <option value="Bonnet">
               <option value="Engine">
@@ -131,7 +122,7 @@
             </datalist>
           </div>
           <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id04').style.display='block', document.getElementById('id05').style.display='none'" class="cancelbtn" style="width: 45%; height: auto;"><h3>Go back</h3></button>
+            <button type="button" onclick="document.getElementById('id04').style.display='block', document.getElementById('id05').style.display='none'" class="cancelbtn" style="width: 45%; height: 15%;"><h3>Go back</h3></button>
             <button type="button" onclick="document.getElementById('id05').style.display='none', document.getElementById('id06').style.display='block'" style="width: 45%; height: 15%;  text-align: center;"><h3 style="color: #fff;">Next</h3></button>
           </div>
         </form>
@@ -141,12 +132,10 @@
           <div class="imgcontainer">
             <img src="../images/Logo.png" alt="Covea logo" width="200px" height="200px">
             <span onclick="document.getElementById('id06').style.display='none', document.getElementById('close').style.display='block'" class="close" title="Close">&times;</span>
-            <label for="title"></title>
-            <input type="p" list="title_list" placeholder="Question Six" name="title">
           </div>
           <div class="container">
-            <label for="DMGPT2"><b>Was There any where else?</b></label required>
-            <input  list="DMGPT2" type="text" placeholder="" name="DMGPT2">
+            <label for="DMGPT2"><b></b></label required>
+            <input  list="DMGPT2" type="text" placeholder=" Question Six - Was There any where else?" name="DMGPT2">
             <datalist id="DMGPT2">
               <option value="Yes, Front Side of vehicle">
               <option value="Yes, Behind of vehicle">
@@ -166,12 +155,10 @@
           <div class="imgcontainer">
             <img src="../images/Logo.png" alt="Covea logo" width="200px" height="200px">
             <span onclick="document.getElementById('id07').style.display='none', document.getElementById('close').style.display='block'" class="close" title="Close">&times;</span>
-            <label for="title"></title>
-            <input type="p" list="title_list" placeholder="Question Seven" name="title">
           </div>
           <div class="container">
-            <label for="PEOLPLE"><b>How many people was involved in the incident?</b></label required>
-            <input  list="People" type="text" placeholder="" name="People">
+            <label for="PEOLPLE"><b></b></label required>
+            <input  list="People" type="text" placeholder="Question Seven - How many people was involved?" name="People">
             <datalist id="People">
               <option value="1-4">
               <option value="5-6">
@@ -179,7 +166,7 @@
             </datalist>
           </div>
           <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id06').style.display='block', document.getElementById('id07').style.display='none'" class="cancelbtn" style="width: 45%; height: auto;"><h3>Go back</h3></button>
+            <button type="button" onclick="document.getElementById('id06').style.display='block', document.getElementById('id07').style.display='none'" class="cancelbtn" style="width: 45%; height: 15%;"><h3>Go back</h3></button>
             <button type="button" onclick="document.getElementById('id07').style.display='none', document.getElementById('id08').style.display='block'" style="width: 45%; height: 15%;  text-align: center;"><h3 style="color: #fff;">Next</h3></button>
           </div>
         </form>
@@ -189,12 +176,10 @@
           <div class="imgcontainer">
             <img src="../images/Logo.png" alt="Covea logo" width="200px" height="200px">
             <span onclick="document.getElementById('id08').style.display='none', document.getElementById('close').style.display='block'" class="close" title="Close">&times;</span>
-            <label for="title"></title>
-            <input type="p" list="title_list" placeholder="Question Eight" name="title">
           </div>
           <div class="container">
-            <label for="DASH"><b>Is there any dash-cam evidence?</b></label required>
-            <input  list="DASH" type="text" placeholder="" name="DASH">
+            <label for="DASH"><b>?</b></label required>
+            <input  list="DASH" type="text" placeholder="Question Eight - Is there any dash-cam evidence" name="DASH">
             <datalist id="DASH">
               <option value="Yes">
               <option value=No>
@@ -212,12 +197,10 @@
           <div class="imgcontainer">
             <img src="../images/Logo.png" alt="Covea logo" width="200px" height="200px">
             <span onclick="document.getElementById('id09').style.display='none', document.getElementById('close').style.display='block'" class="close" title="Close">&times;</span>
-            <label for="title"></title>
-            <input type="p" list="title_list" placeholder="Question Nine" name="title">
           </div>
           <div class="container">
-            <label for="HURT"><b>Was anyone hurt?</b></label required>
-            <input  list="HURT" type="text" placeholder="" name="HURT">
+            <label for="HURT"><b></b></label required>
+            <input  list="HURT" type="text" placeholder="Question nine - Was anyone hurt?" name="HURT">
             <datalist id="HURT">
               <option value="Yes">
               <option value=No>
@@ -225,7 +208,7 @@
             </datalist>
           </div>
           <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id08').style.display='block', document.getElementById('id09').style.display='none'" class="cancelbtn" style="width: 45%; height: auto;"><h3>Go back</h3></button>
+            <button type="button" onclick="document.getElementById('id08').style.display='block', document.getElementById('id09').style.display='none'" class="cancelbtn" style="width: 45%; height: 15%;"><h3>Go back</h3></button>
             <button type="button" onclick="document.getElementById('id09').style.display='none', document.getElementById('id10').style.display='block'" style="width: 45%; height: 15%;  text-align: center;"><h3 style="color: #fff;">Next</h3></button>
           </div>
         </form>
@@ -235,12 +218,10 @@
           <div class="imgcontainer">
             <img src="../images/Logo.png" alt="Covea logo" width="200px" height="200px">
             <span onclick="document.getElementById('id10').style.display='none', document.getElementById('close').style.display='block'" class="close" title="Close">&times;</span>
-            <label for="title"></title>
-            <input type="p" list="title_list" placeholder="Question One" name="title">IFSO
           </div>
           <div class="container">
-            <label for="IFSO"><b>If so, How badly?</b></label required>
-            <input  list="IFSO" type="text" placeholder="" name="IFSO">
+            <label for="IFSO"><b></b></label required>
+            <input  list="IFSO" type="text" placeholder="Question Ten - If so, How badly?" name="IFSO">
             <datalist id="IFSO">
               <option value="N/A">
               <option value="Moderate">
@@ -249,7 +230,7 @@
             </datalist>
           </div>
           <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id09').style.display='block', document.getElementById('id010').style.display='none'" class="cancelbtn" style="width: 45%; height: auto;"><h3>Go back</h3></button>
+            <button type="button" onclick="document.getElementById('id09').style.display='block', document.getElementById('id010').style.display='none'" class="cancelbtn" style="width: 45%; height: 15%;"><h3>Go back</h3></button>
             <button type="button" onclick="document.getElementById('id10').style.display='none', document.getElementById('id11').style.display='block'" style="width: 45%; height: 15%;  text-align: center;"><h3 style="color: #fff;">Next</h3></button>
           </div>
         </form>
@@ -270,7 +251,7 @@
               <input type="checkbox" name="confirm" value="Confirm" required> YOU UNDERSTAND YOUR ANSWERS ARE CORRECT!<br>
           </div>
           <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick=" document.getElementById('id11').style.display='none'" class="cancelbtn" style="width: 45%; height: auto;"><h3>Go back</h3></button>
+            <button type="button" onclick=" document.getElementById('id11').style.display='none'" class="cancelbtn" style="width: 45%; height: 15%;"><h3>Go back</h3></button>
             <button type="submit" style="width: 45%;  height: auto;"><h3 style="color: #fff;">Next</h2></button>
           </div>
         </form>
@@ -288,7 +269,7 @@
               <input type="checkbox" name="confrim2" value="Confirm" required>you understand this does NOT go on your record<br>
           </div>
           <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick=" document.getElementById('close').style.display='none'" class="cancelbtn" style="width: 45%; height: auto;"><h3>Go back</h3></button>
+            <button type="button" onclick=" document.getElementById('close').style.display='none'" class="cancelbtn" style="width: 45%; height: 15%;"><h3>Go back</h3></button>
             <button type="submit" style="width: 45%;  height: auto;"><h3 style="color: #fff;">I Confirm</h2></button>
           </div>
         </form>

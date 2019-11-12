@@ -1,80 +1,96 @@
 <html>
-<head>
-<title>Welcome - Log in</title>
-<link href="./CSS.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-<div id="outerbox">
-<div id="mainlog">
-<h1 style="text-align: center;">Welcome to Covéa</h1>
-<img src="./images/Logo.png" alt="Covea Logo" width="200px" height="200px"><br>
-<!--Creates "Login" button-->
-<button onclick="document.getElementById('id01').style.display='block'" class="main_login" style="width:50%; height: 15%; text-align: center;"><h2>Login</h2></button>
-<br><button onclick="document.getElementById('id02').style.display='block'" class="main_login" style="width:50%; height: 15%"><h2>Register</h2></button>
-<!--Uses login to creat a pop up box-->
-<div id="id01" class="modal">
-  <form class="modal-content animate" action="./mainpage.html" method="post"><!--What it should do when confirmed-->
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-	  <!-- Would be picture-->
-      <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
-        <img src="./images/Logo.png" alt="Covea Logo" width="200px" height="200px"><br>
-        <h1>Login!</h1>
-    </div>
-	<!--Creates content inside box-->
-    <div class="container">
-	<!--Allows user to input policy number in as a text field-->
-      <label for="uname"><h1>Policy Number</h1></label>
-      <input type="text" min="6" max="6" placeholder="Enter your policy number" name="uname" required>
-	<!--Allows users to put password in-->
-      <label for="psw"><h1>Password</h1></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-      <button type="submit" style="width:20%; height: 10%"><h5>Login</h5></button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
-	<!--Allows to either cancel or tell us you forgot password -->
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="width:20%; height: 10%"><h5>Cancel</h5></button>
-      <P align="right"><button type="button" oclick="#". style.display="none" class=Forgetpassword style="width:20%; height: 10%">forget password</button>
-    </div>
-  </form>
-</div>
-<!--Creates register option-->
-<div id="id02" class="modal">
-  <form class="modal-content animate" action="./reg.php" method="post">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
-	  <h4>Register with us!</h4>
-    </div>
-    <div class="container">
-      <!--Placeholder is named as username and tells the user to input their policy number-->
-      <label for="usame"><b>Policy Number</b></label>
-      <input type="text" placeholder="Enter Your Policy Number" name="usame" required>
-      <!--This is used as an input box which the user is told to input their username. -->
-      <label for="usame"><b>Username</b></label>
-      <input type="text" placeholder="Enter a Username" name="usame" required>
-      <!--The user inputs a password which is secure and the placeholder tells the user to input this. -->
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter a Password" name="psw" required>
-      <!--The user inputs a verification of the 1st entry of the password and if they do not match the user will be asked to re-enter their personal password. -->
-	  <label for="psw"><b>Re-enter Password</b></label>
-      <input type="password" placeholder="Please re-enter the password" name="psw" required>
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-   	   <span class="pnu">Dont have a <a href="./details/reg.pn.html">policy number?</a></span>
-    </div>
-  </form>
-</div>
-</div>
+  <head>
+    <title>Welcome - Log in</title>
+    <link href="./CSS.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="outerbox">
+      <div id="mainlog">
+        <h1 style="text-align: center;">Welcome to Covéa</h1>
+        <img class="logo"src="./images/Logo.png" alt="Covea Logo"><br> <!--Logo and takes a break-->
+        <!--Creates "Login" button-->
+        <button onclick="document.getElementById('id01').style.display='block'" class="main_login" ><h2>Login</h2></button>
+        <!--<br><button class="main_login" onclick="document.getElementById('id02').style.display='block'" style="background-color:#0e1616"><h2>Register</h2></button>
+        <br><button class="main_login" style="background-color:#0e1616"><h2>Forgotten Your password?</h2></button><onclick="document.getElementById('id02').style.display='block'" -->
+        <!--Uses login to creat a pop up box-->
+        <div id="id01" class="modal">
+          <form class="modal-content animate" action="./mainpage.html" method="post"><!--What it should do when confirmed-->
+            <div class="container">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="./images/Logo.png" alt="Covea Logo"><br>
+                <h1>Login!</h1>
+            </div>
+        	<!--Creates content inside box-->
+            <div class="container">
+              <label for="pcy"></label>
+                <input type="number"name="uname" placeholder="Enter Your Policy Number..."required> <!--Allows user to input policy number in as a text field--> <!-- min="6" max="531441" -->
+                <label for="psw"></label>
+                <input type="password" placeholder="Enter Your Password..." name="psw" required> <!--Allows users to put password in-->
+                <button type="submit" style="width:20%; height: auto"><h5>Login</h5></button>
+              </label>
+              <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">  <!--Allows to either cancel or tell us you forgot password -->
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="width:auto; height: 10%"><h5>Cancel</h5></button>
+            </div>
+          </form>
+        </div>
+        <!--
+        <div id="id02" class="modal">
+          <form class="modal-content animate" action="./mainpage.html" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+        	  <h1>Register with us!</h1>
+            </div>
+            <div class="container">
 
-</div>
-</body>
+              <label for="usame"></label>
+              <input type="text" placeholder="Enter Your Policy Number..." name="usame" required>
+              <This is used as an input box which the user is told to input their username.
+              <label for="usame"></label>
+              <input type="text" placeholder="Enter a Username..." name="usame" required>
+              The user inputs a password which is secure and the placeholder tells the user to input this.
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter a Password..." name="psw" required>
+              The user inputs a verification of the 1st entry of the password and if they do not match the user will be asked to re-enter their personal password.
+              <input type="password" placeholder="Please re-enter the password..." name="psw" required>
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+           	   <span class="pnu">Dont have a <a href="./details/reg.pn.html">policy number?</a></span>
+            </div>
+          </form>
+        </div>
+        <div id="id03" class="modal">
+          <form class="modal-content animate" action="./details/reg.pw.html" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+        	  <h4>Register with us!</h4>
+            </div>
+            <div class="container">
+              <label for="psw"></label>
+                <input type="text" placeholder="Enter The Last password you remeber..." name="psw" required>
+                <label for="email"></label>
+                <input type="email" placeholder="Enter your email address..." name="email" required>
+                <label for="pw"></label>
+                <input type="email" placeholder="Enter your policy number..." name="email" required>
+                <button type="submit">Login</button>
+                <a href="./details/reg.pw.html"<button type="submit">But I don't know my policy number?</button></a>
+              </label>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+          </form>
+        </div>
+      -->
+      </div>
+    </div>
+  </body>
 </html>
