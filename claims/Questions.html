@@ -7,20 +7,6 @@
 <body>
 <div id="outerbox">
     <div id="main">
-      <datalist id="title_list">
-        <select>
-          <option value="Q1 - What Has happened?">
-          <option value="Question Two">
-          <option value="Question Three">
-          <option value="Question Four">
-          <option value="Question Five">
-          <option value="Question Six">
-          <option value="Question Seven">
-          <option value="Question Eight">
-          <option value="Question Nine">
-          <option value="Question Ten">
-        </select>
-       </datalist>
       <div id="id01" class="modal_1"> <!--What Has happened?-->
         <form for="myForm" class="modal-content animate">
             <div class="imgcontainer">
@@ -31,8 +17,8 @@
          <div class="container">
            <!--Allow users to put what happened-->
           <label for="ACCIDENT"></label>
-
-          <input  list="q1" type="text" placeholder=" Question One - What has happened?" name="ACCIDENT" required>
+          <h1> Question One -  What has happened?</h1>
+          <input  list="q1" type="text" placeholder=" What has happened?" name="ACCIDENT" required>
             <datalist id="q1">
               <option value="Break Down">
               <option value="Crash">
@@ -40,7 +26,7 @@
             </datalist>
           </div>
           <div class="container" style="background-color:#f1f1f1">
-            <button disabled class="cancelbtn" style="width: 45%; height: 15%; text-align: center; background-color: #990000"><h3>Go back</h3></button>
+          <a href="./motor.html"><button  type="button"class="cancelbtn" style="width: 45%; height: 15%; text-align: center; background-color: #990000"><h3>Go back</h3></button></a>
             <button type="button" onclick="document.getElementById('id01').style.display='none', document.getElementById('id02').style.display='block'" style="width: 45%; height: 15%;  text-align: center;"><h3 style="color: #fff;">Next</h3></button>
               <!--onclick="document.getElementById('id01').style.display='none', document.getElementById('id02').style.display='block'" -->
           </div>
@@ -54,6 +40,7 @@
           </div>
           <div class="container">
             <label for="CCTV"><b> </b></label>
+            <h1> Question Two - Please Breifly explain what happened</h1>
             <input  list="yesorno" type="text" placeholder="Question Two - Please Breifly explain what happened..." name="uname" required>
           </div>
           <div class="container" style="background-color:#f1f1f1">
@@ -69,8 +56,9 @@
             <span onclick="document.getElementById('id03').style.display='none', document.getElementById('close').style.display='block'" class="close" title="Close">&times;</span>
           </div>
           <div class="container">
-            <label for="Witnesses"></label >
-            <input  list="yesorno" type="text" placeholder="Question Three - Was there any witnesses or cctv?" name="Witnesses">
+            <label for="Witnesses"></label>
+            <h1>Question Three - Was there any witnesses or cctv?</h1>
+            <input  list="yesorno" type="text" placeholder="Was there any witnesses or cctv?" name="Witnesses">
             <datalist id="yesorno">
               <option value="Yes, Both">
               <option value="Yes, Only CCTV">
@@ -109,6 +97,7 @@
           </div>
           <div class="container">
             <label for="DMGPT1"><b></b></label required>
+              <h1> Question Five -  Where Was the damage done?</h1>
             <input  list="DMGPT1" type="text" placeholder="Question Five -  Where Was the damage done?" name="DMGPT1">
             <datalist id="DMGPT1">
               <option value="Bonnet">
@@ -135,6 +124,7 @@
           </div>
           <div class="container">
             <label for="DMGPT2"><b></b></label required>
+              <h1> Question Six - Was There any where else?</h1>
             <input  list="DMGPT2" type="text" placeholder=" Question Six - Was There any where else?" name="DMGPT2">
             <datalist id="DMGPT2">
               <option value="Yes, Front Side of vehicle">
@@ -158,6 +148,7 @@
           </div>
           <div class="container">
             <label for="PEOLPLE"><b></b></label required>
+              <h1>Question Seven - How many people was involved?</h1>
             <input  list="People" type="text" placeholder="Question Seven - How many people was involved?" name="People">
             <datalist id="People">
               <option value="1-4">
@@ -179,6 +170,7 @@
           </div>
           <div class="container">
             <label for="DASH"><b>?</b></label required>
+              <h1>Question Eight - Is there any dash-cam evidence</h1>
             <input  list="DASH" type="text" placeholder="Question Eight - Is there any dash-cam evidence" name="DASH">
             <datalist id="DASH">
               <option value="Yes">
@@ -200,7 +192,8 @@
           </div>
           <div class="container">
             <label for="HURT"><b></b></label required>
-            <input  list="HURT" type="text" placeholder="Question nine - Was anyone hurt?" name="HURT">
+              <h1>Question Nine - Was anyone hurt?</h1>
+            <input  list="HURT" type="text" placeholder="Question Nine - Was anyone hurt?" name="HURT">
             <datalist id="HURT">
               <option value="Yes">
               <option value=No>
@@ -221,6 +214,7 @@
           </div>
           <div class="container">
             <label for="IFSO"><b></b></label required>
+            <h1>Question Ten - If so, How badly?</h1>
             <input  list="IFSO" type="text" placeholder="Question Ten - If so, How badly?" name="IFSO">
             <datalist id="IFSO">
               <option value="N/A">
@@ -252,7 +246,7 @@
           </div>
           <div class="container" style="background-color:#f1f1f1">
             <button type="button" onclick=" document.getElementById('id11').style.display='none'" class="cancelbtn" style="width: 45%; height: 15%;"><h3>Go back</h3></button>
-            <button type="submit" style="width: 45%;  height: auto;"><h3 style="color: #fff;">Next</h2></button>
+            <button type="submit" style="width: 45%;  height: 15%;"><h3 style="color: #fff;">Next</h2></button>
           </div>
         </form>
       </div>

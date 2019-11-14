@@ -1,3 +1,5 @@
+
+
 /*DIV'S*/
 #body /*Main Body of the website leans center*/
   {
@@ -237,6 +239,9 @@ span.usname/*Password input with name "psw"*/
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     padding-top: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 .modal-content /* Modal Content/Box */
   {
@@ -269,7 +274,7 @@ span.usname/*Password input with name "psw"*/
 .dropbtn /*Drop Down button*/
   {
     background-color: #5a7823;
-    background-image:url('./navicon.png');
+    background-image:url('./images/navicon.png');
     color: white;
     padding: 35px;
     font-size: 16px;
@@ -285,8 +290,8 @@ span.usname/*Password input with name "psw"*/
     display: none;
     position: absolute;
     background-color: #78A02E;
-    opacity: 0.85;
-    min-width: 270px;
+    opacity: 1;
+    min-width: 300px;
     width: auto;
     height: auto;
     font-size: 150px
