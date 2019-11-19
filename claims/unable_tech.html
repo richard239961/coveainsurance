@@ -5,12 +5,23 @@
   <script src="js.js"></script>
 </head>
 <body>
-  <div id="outerbox">
-    <div id="mainlog">
-      <h1>Welcome to Covéa</h1>
-      <h2>Sorry to inform you but your <b>Technology</b> cover is unavailable to be applied for now.<br></h2>
-      <a href="../mainpage.html"><button style="width:65%; height: 15%"><h2>Home</h2></button></a>
-    </div>
+  <div id="mainlog">
+    <div id="modal_1">
+      <form class="modal-content animate"><!--What it should do when confirmed-->
+        <div class="container">
+          <span onclick="document.getElementById('close').style.display='block'" class="close" title="Close Modal">&times;</span>
+          <img src="../images/Logo.png" alt="Covea Logo"><br>
+  <h1>Welcome to Covéa</h1>
+</div>
+<div class="container">
+  <label for="pcy"></label>
+    <h3 style="text-align: center;"> Sorry to inform you but your <b>Technology</b> cover is unavailable to be applied for now.</h3>
+        <blockquote style="font-size: 35px">
+        </div>
+        <div class="container" style="background-color:#f1f1f1">  <!--Allows to either cancel or tell us you forgot password -->
+          <a href="../mainpage.html"><button type="button"class="cancelbtn" style="width:auto; height: 10%"><h5>Home</h5></button></a>
+        </div>
+      </form>
 </div>
 </body>
 </html>
