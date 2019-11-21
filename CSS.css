@@ -327,8 +327,9 @@ span.usname/*Password input with name "psw"*/
   }
 .main_login /*Main login class*/
   {
-      width:50%;
-      height: 15%;
+      width:53%;
+      max-width: 53%;
+      height: auto;
        text-align: center;
   }
 
