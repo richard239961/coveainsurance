@@ -1,0 +1,151 @@
+<html>
+  <head>
+    <title>Welcome - Covéa</title>
+    <link href="./CSS.css" rel="stylesheet" type="text/css" />
+    <script src="js.js"></script>
+  </head>
+  <body>
+    <div id"outerbox">
+      <div id="header">
+        <h1 style="text-align: center; margin: 2%">Welcome -</h1> <!--Wanted to say name here-->
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn" style="width: 100%; height: 25%;"></button>
+          <div id="myDropdown" class="dropdown-content">
+           <!--<input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">-->
+              <button onclick="document.getElementById('id01').style.display='block'" style="width: 95%; height: 20%;"><h2>Account</h2></button><br>
+              <button onclick="document.getElementById('id02').style.display='block'" style="width: 90%; height: 20%;"><h2>Contact</h2></button><br>
+              <button onclick="document.getElementById('id04').style.display='block'" style="width: 90%; height: 20%;"><h2>Logout</h2></button><br>
+          </div>
+          <div id="id01" class="modal"><!--Account-->
+            <form class="modal-content animate" action="./mainpage.html" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                 <!-- Would be picture-->
+                  <img src="./images/avatar.png" class="Avatar" style="text-align: center;">
+                  <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
+                <h3>Your Account!</h3>
+              </div>
+               <!--Creates content inside box-->
+              <div class="container">
+                 <!--Allows user to put policy number in as a text field-->
+                  <!--<img src="./images/avatar.png" class="Avatar" style="text-align: center;">-->
+                  <label for="uname" style="text-align: center;"><b>Your Policy Number:</b></label>
+                  <input disabled type="text" min="6" max="6" placeholder="******" name="uname">
+                   <!--Allow susers to put password in-->
+                   <label for="uname"><b>Username</b></label>
+                   <input disabled type="text" placeholder="Hotstuffs_isagoodbandname" name="uname">
+                   <!-- <button type="submit" style="width: 50%; height: 10%">Go further</button> -->
+                 </div>
+                  <!--Allows to either cancel or tell us you forgot password -->
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="width: 49%; height: 10%"><h2>Cancel</h2?</button>
+                  <button type="submit" style="width: 49%; height: 10%"><h2>Go further</h2></button>
+              </div>
+            </form>
+          </div>
+          <div id="id02" class="modal">
+            <form class="modal-content animate" action="./mainpage.html" method="post"><!--What it should do when confirmed-->
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                 <!-- Would be picture-->
+                 <!-- <img src="./images/avatar.png" alt="Avatar" class="avatar"> -->
+                <h3>Contact!</h3>
+              </div>
+               <!--Creates content inside box-->
+               <div class="container">
+                 <label for="uname"><b>You can call us on:</b></label>
+                 <input disabled type="text" min="6" max="6" placeholder="01484 000111" name="uname">
+                 <label for="uname"><b>Email us on:</b></label>
+                 <input disabled type="text" placeholder="support@coveainsurance.co.uk" name="uname">
+                 <button type="submit" style="width: 100%; height: 10%"><h2>All Done here!</h2></button>
+               </div>
+            </form>
+          </div>
+          <div id="id04" class="modal">
+            <form class="modal-content animate" action="./index.html" method="post"><!--What it should do when confirmed-->
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <h1>Are you sure you want to log out?</h1>
+              </div>
+              <div class="container">
+                <label for="uname"><b><h2>Your Policy Number</h2></b></label><br>
+                <button type="submit" style="width: 100%; height: 15%"><h2>Log me out now!</h2></button>
+                <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn" style="width: 100%; height: 10%"><h2>No, i accidently clicked this</h2></button>
+              </div>
+            </form>
+          </div>
+          </div>
+      <div id="main">
+        <br>
+        <h2 style="color: black;"> Your Policies!</h2> <br><br>
+        <div id="polices">
+          <!--<input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">-->
+        <div id="main_c" tag="motor">
+            <div id="policy" tag="motor"> <!--Policy Box 1 - Motor Cover-->
+            <h1>You have Motor Insurance</h1>
+                <h3 style="text-align: center;">With Motor Cover you're able to claim for breakdowns, Crashes,Car fires and more!<br> This Insurance allows you to have complete cover of your vehicles no matter what happens.</h3>
+          </div>
+          <div id=central>
+            <a href="./claims/motor.html">  <button tag="Motor" style="width: auto; height: auto;" class="main_button"><h2>Make a Claim now!</h2></button></a>
+          </div>
+        </div>
+        <div id="space">
+        </div>
+        <div id="main_c" tag="pet"><!--Lost pet cover-->
+        <div id="policy_alt"> <!--Policy Box 1 - Motor Cover-->
+            <h1>You have Lost pet Cover</h1>
+                <h3 style="text-align: center;">With Lost pet Cover you're able to claim if your pet has ran away from home,lost, or sadly passed on</h3>
+          </div>
+          <div id=central>
+            <a href="./claims/pet.html">  <button style="width: auto; height: auto;" class="main_button"><h2>Make a Claim now!</h2></button></a>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div id="main_c" tag="fire"><!--Fire Cover-->
+            <div id="policy"> <!--Policy Box 1 - Motor Cover-->
+            <h1>You have Fire Cover</h1>
+                <h3 style="text-align: center;">With Fire Cover you're able to claim if there has been a fire at any of your properties.<br> This Cover allows you to have complete cover of your Buildings/homes no matter what happens.</h3>
+          </div>
+          <div id=central>
+            <a href="./claims/Fire.html"> <button style="width: auto; height: auto;" class="main_button"><h2>Make a Claim now!</h2></button></a>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div id="main_c" tag="home"><!--Home Cover-->
+            <div id="policy_alt"> <!--Policy Box 1 - Motor Cover-->
+            <h1>You have Home Cover</h1>
+                <h3 style="text-align: center;">With Home Cover you're able to claim if there has been a fire at any of your properties.<br> This Cover allows you to have complete cover of your Buildings/homes no matter what happens.</h3>
+          </div>
+          <div id=central>
+            <a href="./claims/Home.html">  <button style="width: auto; height: auto;" class="main_button"><h2>Make a Claim now!</h2></button></a>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div id="main_c" tag="theft"><!--Theft Cover-->
+            <div id="policy"> <!--Policy Box 1 - Motor Cover-->
+            <h1>You have Theft Cover</h1>
+                <h3 style="text-align: center;">With Theft Cover you're able to claim if there has been a robbery at any of your propertys.<br> This Cover allows you to have complete cover of your Buildings/homes no matter what happens.</h3>
+          </div>
+          <div id=central>
+            <a href="./claims/Theft.html">  <button style="width: auto; height: auto;" class="main_button"><h2>Make a Claim now!</h2></button></a>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div id="main_c" tag="Technology"><!--Technology Cover-->
+            <div id="policy_alt"> <!--Policy Box 1 - Motor Cover-->
+            <h1>You do <B>NOT</B> have Technology Cover</h1>
+                <h3 style="text-align: center;">With Technology Cover you're able to claim if anything happens to any of your products on this cover, Broken, Stolen, Damaged<br> Covering Phones, Laptops, Smart Watchs, Wireless earphones.</h3>
+          </div>
+          <div id=central>
+            <a href="./claims/Technology.html">  <button style="width: auto; height: auto;" class="main_button"><h2>APPLY <B> NOW!</b></h2></button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
