@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Untitled Document</title>
+<link href="../CSS.css" rel="stylesheet" type="text/css" />
+<script src="../js.js"></script>
+</head>
+<body>
+<div id="outerbox">
+  <div id="header">
+    <h1 style="text-align: center; margin: 2%">Welcome -</h1> <!--Wanted to say name here-->
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn" style="width: 100%; height: 25%;"></button>
+      <div id="myDropdown" class="dropdown-content">
+       <!--<input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">-->
+          <button onclick="document.getElementById('id01').style.display='block'" style="width: 95%; height: 20%;"><h2>Account</h2></button><br>
+          <button onclick="document.getElementById('id02').style.display='block'" style="width: 90%; height: 20%;"><h2>Contact</h2></button><br>
+          <button onclick="document.getElementById('id04').style.display='block'" style="width: 90%; height: 20%;"><h2>Logout</h2></button><br>
+      </div>
+      <div id="id01" class="modal"><!--Account-->
+        <form class="modal-content animate" action="./mainpage.html" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+             <!-- Would be picture-->
+              <img src="./images/avatar.png" class="Avatar" style="text-align: center;">
+              <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
+            <h3>Your Account!</h3>
+          </div>
+           <!--Creates content inside box-->
+          <div class="container">
+             <!--Allows user to put policy number in as a text field-->
+              <!--<img src="./images/avatar.png" class="Avatar" style="text-align: center;">-->
+              <label for="uname" style="text-align: center;"><b>Your Policy Number:</b></label>
+              <input disabled type="text" min="6" max="6" placeholder="******" name="uname">
+               <!--Allow susers to put password in-->
+               <label for="uname"><b>Username</b></label>
+               <input disabled type="text" placeholder="Hotstuffs_isagoodbandname" name="uname">
+               <!-- <button type="submit" style="width: 50%; height: 10%">Go further</button> -->
+             </div>
+              <!--Allows to either cancel or tell us you forgot password -->
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="width: 49%; height: 10%"><h2>Cancel</h2?</button>
+              <button type="submit" style="width: 49%; height: 10%"><h2>Go further</h2></button>
+          </div>
+        </form>
+      </div>
+      <div id="id02" class="modal">
+        <form class="modal-content animate" action="./mainpage.html" method="post"><!--What it should do when confirmed-->
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+             <!-- Would be picture-->
+             <!-- <img src="./images/avatar.png" alt="Avatar" class="avatar"> -->
+            <h3>Contact!</h3>
+          </div>
+           <!--Creates content inside box-->
+           <div class="container">
+             <label for="uname"><b>You can call us on:</b></label>
+             <input disabled type="text" min="6" max="6" placeholder="01484 000111" name="uname">
+             <label for="uname"><b>Email us on:</b></label>
+             <input disabled type="text" placeholder="support@coveainsurance.co.uk" name="uname">
+             <button type="submit" style="width: 100%; height: 10%"><h2>All Done here!</h2></button>
+           </div>
+        </form>
+      </div>
+      <div id="id04" class="modal">
+        <form class="modal-content animate" action="./index.html" method="post"><!--What it should do when confirmed-->
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <h1>Are you sure you want to log out?</h1>
+          </div>
+          <div class="container">
+            <label for="uname"><b><h2>Your Policy Number</h2></b></label><br>
+            <button type="submit" style="width: 100%; height: 15%"><h2>Log me out now!</h2></button>
+            <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn" style="width: 100%; height: 10%"><h2>No, i accidently clicked this</h2></button>
+          </div>
+        </form>
+      </div>
+      </div>
+</div>
+<div id="main">
+<div align="Center">
+   <h1>Your Hotel - Travelodge Dover</h1>
+
+<p align="Center"><font size="3"><B><U>Unit 8 St James St, Dover CT16 1QD</U></B></a>
+<p align="Center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.0679827506524!2d1.3153030159617276!3d51.12565404636319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dea4d37c7b563f%3A0x6a958ca23350a480!2sTravelodge%20Dover!5e0!3m2!1sen!2suk!4v1573467300295!5m2!1sen!2suk"
+width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<br> <br> <br><br><br><br><br>
+<h1>Ferry Tickets</h1>
+They have been re-booked and reciepts are shown below. <br><br><br>
+<img src="../images/Card.png" =height="150px" width="550px">
+<br><br><br><br>
+<img src="../images/imageOK.PNG" =height="150px" width="550px">
+<br><br>
+      <button onclick="window.location.href = 'file:///C:/Users/237025/Downloads/coveainsurance-master/coveainsurance-master/Result2.html';">OK</button>
+</div>
+</body>
+</html>
